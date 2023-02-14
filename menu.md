@@ -1,7 +1,5 @@
 theme: jekyll-theme-minimal
 title: ISO 10012:2003 in Gas Stations
-
-theme: Jekyll
 ---
 layout: page
 ---
