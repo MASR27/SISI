@@ -33,3 +33,8 @@ def generate_menu():
         f.write(content)
 
         generate_index()
+        
+git add .
+git commit -m "Initial commit"
+git push origin master
+
