@@ -1,0 +1,58 @@
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/menu')
+def menu():
+    return render_template('menu.html')
+
+@app.route('/introduction')
+def introduction():
+    return render_template('introduction.html')
+
+@app.route('/scope')
+def scope():
+    return render_template('scope.html')
+
+@app.route('/normative-references')
+def normative_references():
+    return render_template('normative-references.html')
+
+@app.route('/terms-and-definitions')
+def terms_and_definitions():
+    return render_template('terms-and-definitions.html')
+
+@app.route('/requirements-for-measurement-management-systems')
+def requirements_for_measurement_management_systems():
+    return render_template('requirements-for-measurement-management-systems.html')
+
+@app.route('/management-responsibility')
+def management_responsibility():
+    return render_template('management-responsibility.html')
+
+@app.route('/measurement-system-analysis')
+def measurement_system_analysis():
+    return render_template('measurement-system-analysis.html')
+
+@app.route('/measurement-equipment-control')
+def measurement_equipment_control():
+    return render_template('measurement-equipment-control.html')
+
+@app.route('/measurement-process-control')
+def measurement_process_control():
+    return render_template('measurement-process-control.html')
+
+@app.route('/data-analysis')
+def data_analysis():
+    return render_template('data-analysis.html')
+
+@app.route('/improvement')
+def improvement():
+    return render_template('improvement.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
